@@ -1,1 +1,11 @@
-/yarn.lock
+**/yarn.lock
+**/package-lock.json
+**/node_modules
+**/bower_components
+**/vendor
+**/composer.lock
+**/composer.phar
+**/composer.json
+**/composer.json
+**/composer.lock
+**/composer.phar
