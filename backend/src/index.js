@@ -24,9 +24,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(
   "/files",
-  express.static(path.resolve(__dirname, "..", "tmp", "uploads"))
+  express.static(path.resolve(__dirname, "..", "public", "tmp", "uploads"))
 );
 
 app.use(require("./routes"));
 
 app.listen(4000);
+exports.app = functions.https.onRequest(app);
